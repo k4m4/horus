@@ -87,7 +87,7 @@ They will run via the account of the `PRIVATE_KEY` specified in `.env`.
 To run the tests, execute:
 
 ```sh
-$ npm run test
+$ npm test
 ```
 
 ## Disclaimer
