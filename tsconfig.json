@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "declaration": true
+  },
+  "include": [
+    "./scripts",
+    "./test",
+    "./typechain",
+    "./utils",
+    "typings/**/*.d.ts",
+    "lib/*.ts"
+  ],
+  "files": ["./hardhat.config.ts"]
+}
