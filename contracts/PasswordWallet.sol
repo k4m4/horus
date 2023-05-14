@@ -4,7 +4,7 @@ pragma solidity ^0.8.0;
 import {IERC20} from '@openzeppelin/contracts/token/ERC20/ERC20.sol';
 import {IDecryptor} from './interfaces/IDecryptor.sol';
 
-// TODO: rename expiration to maturity
+// TODO: rename "expiration" to "maturity"
 contract PasswordWallet {
   uint256 public constant BLOCK_DELAY = 2; // TODO: determine optimal value
 
@@ -36,7 +36,6 @@ contract PasswordWallet {
     commitmentCollateral = _commitmentCollateral;
   }
 
-  // TODO: charge collateral for commitments
   function commit(bytes32 _commitment) external payable {
     require(msg.value == commitmentCollateral, 'Invalid collateral amount');
     require(

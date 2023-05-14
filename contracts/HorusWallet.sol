@@ -5,8 +5,8 @@ import {MerkleProof} from '@openzeppelin/contracts/utils/cryptography/MerkleProo
 import {IERC20} from '@openzeppelin/contracts/token/ERC20/ERC20.sol';
 import {IDecryptor} from './interfaces/IDecryptor.sol';
 
-// TODO: rename expiration to maturity
-// TODO: determine fallback (e.g., if wallet not used for > n weeks)
+// TODO: rename "expiration" to "maturity"
+// TODO: determine fallback, in case wallet expires before entire balance was spent
 contract HorusWallet {
   uint256 public constant BLOCK_DELAY = 2; // TODO: determine optimal value
 
