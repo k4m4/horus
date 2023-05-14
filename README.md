@@ -93,3 +93,7 @@ $ npm run test
 ## Disclaimer
 
 This code has not been audited. Use it at your own risk.
+
+## License
+
+GPL v3
